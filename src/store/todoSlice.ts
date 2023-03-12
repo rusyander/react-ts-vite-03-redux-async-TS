@@ -161,7 +161,7 @@ const todoSlice = createSlice({
         console.log(action.payload);
 
         const todleTodo = state.list.filter(
-          (todo) => todo.id === action.payload
+          (todo) => todo.id !== action.payload
         );
         console.log(todleTodo);
 
