@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import NewTodoForm from "./components/NewTodoForm";
-import TodoList from "./components/TodoList";
+// import TodoList from "./components/TodoList";
 import { useAppDispatch, useAppSelector } from "./hook";
 import { fetchTodos, addNewTodo } from "./store/todoSlice";
+import TodoList from "components/TodoList";
 
 export default function App() {
   const [title, setTitle] = useState("");
